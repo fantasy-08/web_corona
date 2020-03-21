@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Pacifico&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+body,html{
+    height: 100%;
+}
+section {
+    margin: 0 1em;
+}
+.pun{
+    font-family:'Pacifico', cursive;
+    text-align: center;
+}
+.head-bg section{
+    width:45%;
+}
+.head-bg{
+    background: #307D99 url('pic/coro.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: left;
+    
+}
+
+h6{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-right:0;
+    text-align: center;
+    padding-top:5em;
+    padding-left: 5em;
+}
+
+h1{
+    font-size: 2.5rem;
+    margin:2em 0 1.2em;
+}
+h1 .virus{
+    color: red;
+}
+.head-bg p{
+    font-weight: lighter;
+    margin:0 1em 3em;
+}
+.form{
+    background-color: white;
+    margin: 2em 0;
+    color:#307D99; 
+    padding:2em;
+    border-radius: .5em;
+    box-shadow: 10px 10px 10px rgba(0,0,0,.3);
+}
+form{
+    display: flex;
+}
+.form-left{
+    width:70%;
+}
+label{
+    color: #2D7D98;
+    font-weight: bold;
+    display: block;
+    margin:0;
+    font-size: 1.2em;
+}
+input[type='text']{
+    border:1px solid #707070;
+    width:70%;
+    height: 40%;
+    padding:1em;
+    margin-right: 0em;
+    box-sizing: border-box;
+    border-radius: .5em;
+    margin-top: 1.2em;
+}
+input[type='button']{
+    background-color: #F89104;
+    border: none;
+    color:white;
+    font-weight: bold;
+    cursor: pointer;
+    height: fit-content;
+    font-size: 1.1em;
+    margin-left: 1em;
+    margin-top: 2.2em;
+    padding:.7em 0;
+    width: 30%;
+
+}
+input[type='button']:hover{
+    background-color: red;
+}
+.Myths{
+    margin:0;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-template-areas: "bowl content";
+}
+.right-col{
+    grid-area: content;
+    text-align: left;
+    align-self: center;
+    padding:2em;
+}
+img{
+    width:100%;
+    grid-area: bowl;
+}
+
+ul{
+    font-weight: bold;
+
+}
+.gk h1{
+    text-align: center;
+    margin-top:2em;
+}
