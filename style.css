@@ -8,6 +8,17 @@ body,html{
 section {
     margin: 0 1em;
 }
+header {
+    padding: 6em 0;
+    text-align: center;
+}
+.head-bg a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
 .pun{
     font-family:'Pacifico', cursive;
     text-align: center;
@@ -71,7 +82,7 @@ label{
 }
 input[type='text']{
     border:1px solid #707070;
-    width:70%;
+    width:90%;
     height: 40%;
     padding:1em;
     margin-right: 0em;
@@ -88,10 +99,17 @@ input[type='button']{
     height: fit-content;
     font-size: 1.1em;
     margin-left: 1em;
-    margin-top: 2.2em;
+    margin-top: 2.8em;
     padding:.7em 0;
     width: 30%;
 
+}
+.form p {
+    color: gray;
+    margin-bottom: 1.5em;
+    font-weight: normal;
+    font-size: .9em;
+    margin-top: .3em;
 }
 input[type='button']:hover{
     background-color: red;
@@ -136,4 +154,98 @@ ul{
     /* margin: 1.25rem -1rem; */
     padding: 2rem 1rem;
     position: relative;
+}
+@media (max-width:600px){
+    .head-bg {
+        text-align: center;
+        padding-bottom: 4em;
+    }
+    h1{
+        font-size: 1.4rem;
+    }
+    h1 span {
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        position: relative;
+        z-index: 1;
+    }
+
+    .head-bg a{
+        color: white;
+        text-decoration: none;
+        font-weight: normal;
+        font-size: .8rem;
+
+    }
+    
+    h1 span::before {
+        content: ' ';
+        position: absolute;
+        width: 3em;
+        background: #00BFFF;
+        height: .2em;
+        bottom: 0;
+        z-index: -1;
+        margin-left: -.3em;
+    }
+    .form {
+        background-color: white;
+        margin: 2em -1em 0;
+        padding: 2em;
+    }
+    
+    label {
+        color: #2D7D98;
+        font-weight: bold;
+        display: block;
+        margin-bottom: 1em;
+        font-size: 1.2em;
+    }
+    
+    input[type=text] {
+        border: 1px solid #707070;
+        width: 100%;
+        padding: 1em;
+        box-sizing: border-box;
+        border-radius: .5em;
+        margin-top: 1.2em;
+    }
+    
+    .form p {
+        color: gray;
+        margin-bottom: 1.5em;
+        font-weight: normal;
+        font-size: .9em;
+        margin-top: .3em;
+    }
+    
+    input[type=button] {
+        background-color: #F89104;
+        border: none;
+        width: 100%;
+        color: white;
+        font-weight: bold;
+        padding: 1em 0;
+        border-radius: .5em;
+        font-size: 1.3em;
+        cursor: pointer;
+    }
+    
+    input[type=button]:hover {
+        background-color: rgb(216, 126, 1);
+    }
+}
+.head {
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-2em);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
