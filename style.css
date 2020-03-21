@@ -160,8 +160,13 @@ ul{
         text-align: center;
         padding-bottom: 4em;
     }
+    header {
+        padding: 2em 0 0 0;
+    }
     h1{
         font-size: 1.4rem;
+        margin-top:.8em ;
+        margin-bottom: 0.2em;
     }
     h1 span {
         text-transform: uppercase;
