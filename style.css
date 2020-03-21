@@ -96,13 +96,10 @@ input[type='button']{
 input[type='button']:hover{
     background-color: red;
 }
-.Myths{
-    margin:0;
-    display: grid;
-    grid-template-columns: repeat(2,50%);
-    grid-template-areas: "bowl content";
+section.Myths{
+    margin:.3em 0;
 }
-.right-col{
+div.fake-content{
     grid-area: content;
     text-align: left;
     align-self: center;
@@ -110,7 +107,6 @@ input[type='button']:hover{
 }
 img{
     width:100%;
-    grid-area: bowl;
 }
 
 ul{
@@ -120,4 +116,24 @@ ul{
 .gk h1{
     text-align: center;
     margin-top:2em;
+}
+.cta--cyan .cta__wrap, .cta--cyan  .cta--cyan .cta__wrap {
+    background: #009aa6;
+}
+.cta__wrap:last-of-type  {
+    margin-bottom: 0;
+}
+.cta__wrap, .cta--blue .cta__wrap, .cta--blue .rtf .cta__wrap, .cta--cyan .cta__wrap, .cta--cyan .rtf .cta__wrap, .cta--cyan.one-line .cta__wrap, .cta--cyan.one-line .rtf .cta__wrap, .cta--video .cta__wrap, .cta--video .rtf .cta__wrap, .rtf .cta__wrap, .rtf .cta--cyan.one-line .cta__wrap {
+    padding: 1rem;
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+.cta--cyan, .rtf .cta--cyan {
+    max-width: 950px;
+    background: url('pic/background.jpg');
+}
+.cta, .cta--blue, .rtf .cta--blue, .cta--cyan, .rtf .cta--cyan, .cta--video, .rtf .cta--video, .rtf .cta {
+    /* margin: 1.25rem -1rem; */
+    padding: 2rem 1rem;
+    position: relative;
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Corona</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">    
 </head>
@@ -25,8 +26,11 @@
                   <a href="#fake" class="nav-link">MYTHS</a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link">FACTS & STATS</a>
-            </li>
+                <a href="#facts" class="nav-link">FACTS & STATS</a>
+              </li>
+              <li class="nav-item">
+                <a href="#sym" class="nav-link">SYMPTOMS</a>
+              </li>
           </ul>
       </div>
   </nav>
@@ -50,19 +54,30 @@
     </div>
     <a name='about'></a>
     <section class='Myths'>
-        <div class="right-col">
-            <h2>Help Us Fight <span style='color:red;'>Fake News</span></h2>
-            <p>
-                <h3>What to Look For-</h3>
-                <ul>
-                    <li>Source</li>
-                    <li>Logo</li>
-                    <li>Bad English</li>
-                    <li>Over Encourangement to Share</li>
-                </ul>
-            </p>
+        <div class="row">
+            <div class="col-lg-6">
+                <img src="pic/fake_news.jpg" alt="">
+            </div>
+            <div class="col-lg-6">
+                <div class="right-col">
+                    <div class="fake-content">
+                        <h2>Help Us Fight <span style='color:red;font-weight: bold;'>Fake News</span></h2>
+                        <p style='font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;'> 
+                            According to the WHO, the most common symptoms of Covid-19 are fever, tiredness and a dry cough. Some patients may also have a runny nose, sore throat, nasal congestion and aches and pains or diarrhoea. About 80% of people who get Covid-19 experience a mild case – about as serious as a regular cold – and recover without needing any special treatment.
+                            There have been over 11,000 deaths globally!
+                            <h5 style='color:brown;'>It's important to fight false news in this tough situation.</h5> 
+                            <h3>What to Look For:</h3>
+                            <ul>
+                                <li>Source</li>
+                                <li>Logo</li>
+                                <li>Bad English</li>
+                                <li>Over Encourangement to Share</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <img src="pic/fake_news.jpg" alt="">
     </section>
     <a name='fake'></a>
     <section class='gk '>
@@ -106,6 +121,27 @@
                 </div>
             </div>
     </section>
-    
+    <a name='facts'></a>
+    <section class='facts-stat'>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="cta--cyan js-cta" data-anchor="What You Need to Know">
+                    <div class="cta__wrap">
+                            <span class="cta__label" style="background-color: rgba(0, 0, 0, .48); color:white;padding:0.2em 0.5em"; >
+                                        <span class="icon-alert"><i class="fa fa-exclamation-circle" aria-hidden="true" style="color: yellow;"></i></span> What You Need to Know
+                            </span>
+                            <h4 class="cta__title" style="font-family: sans-serif; color: white; padding-left: 2em; padding-top: .6em;">COVID-19</h4>
+                        <ul style="color: white; font-weight: lighter;">
+                            <li>COVID-19 is the disease caused by the new coronavirus that emerged in China in December 2019.</li>
+                            <li>COVID-19 symptoms include cough, fever and shortness of breath. COVID-19 can be severe, and some cases have caused death.</li>
+                            <li>The new coronavirus can be spread from person to person. It is diagnosed with a laboratory test.</li>
+                            <li>There is no coronavirus vaccine yet. Prevention involves frequent hand-washing, coughing into the bend of your elbow and staying home when you are sick.</li>
+                        </ul>
+            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
