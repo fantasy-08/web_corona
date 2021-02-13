@@ -47,19 +47,19 @@
                 <div class="card border-info mb-3" style="width: 10rem;margin:.5rem">
                     <div class="card-header text-info">Confirmed Cases</div>
                     <div class="card-body text-info">
-                      <h5 class="card-title text-info">312,458</h5>
+                      <h5 class="card-title text-info" id="total">0</h5>
                     </div>
                 </div>
                 <div class="card border-danger mb-3" style="width: 10rem;margin:.5rem";>
                     <div class="card-header text-danger">Confirmed Deaths</div>
                     <div class="card-body text-danger">
-                    <h5 class="card-title">13,223</h5>
+                    <h5 class="card-title" id="death">0</h5>
                     </div>
                 </div>
                 <div class="card border-success mb-3" style="width: 10rem;margin:.5rem">
-                    <div class="card-header text-success">Countries Affected</div>
+                    <div class="card-header text-success">Total Recoverd</div>
                     <div class="card-body text-success">
-                      <h5 class="card-title text-success">183</h5>
+                      <h5 class="card-title text-success" id="recoverd">0</h5>
                     </div>
                 </div>
             </div>
@@ -216,7 +216,18 @@
             </div>
         </div>
     </footer>
-
+<script>
+    function getCount(){
+        fetch('https://api.covid19api.com/world/total')
+        .then(res=>res.json())
+        .then(data=>{
+            document.getElementById('total').innerHTML=data.TotalConfirmed;
+            document.getElementById('death').innerHTML=data.TotalDeaths;
+            document.getElementById('recoverd').innerHTML=data.TotalRecovered;
+        })
+    }
+    getCount();
+</script>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
